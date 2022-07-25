@@ -1,16 +1,56 @@
-arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-flag = True
-x = 3
-if x%2 == 0 :
-    flag = False
-else:
-    flag = True
+'''
+Not CodeForces Problem
+'''
 
-for i in range(0, x):
-    print(i * ' ', end='')
-    if i % 2 == 0:
-        print(
-            str(arr[i]) + (2*x - 3)  * ' ' + str(arr[i + (x - 1) * 2]) + (2*x - 3)  * ' ' + str(arr[i + (x - 1) * 4]))
-    else:
-        print(
-            str(arr[i]) + (2*x - 3)  * ' ' + str(arr[i + (x - 1) * 2]) + (2*x - 3)  * ' ' + str(arr[i + (x - 1) * 4]))
+def zigzag(s, x):
+    i = 0
+    j = 0
+    d = 1
+    output = [[' ' for i in range(0, len(s))] for i in range(x)]
+    while (1):
+        output[i][j] = s[j]
+        if i == x - 1:
+            d = -1
+        elif i == 0:
+            d = 1
+        i += d
+        if j < len(s) - 1:
+            j += 1
+        else:
+            break
+    for i in output:
+        print(''.join(i))
+
+
+'''
+Helping Methods
+'''
+
+def lines_Counter():
+    c = 0
+    while (1):
+        a = input()
+        if a == '..':
+            break
+        c += 1
+    print(c)
+def Answer_Checker():
+    n = int(input())
+    Output = []
+    Answer = []
+    for i in range(n):
+        Output.append(input())
+    for i in range(n):
+        Answer.append(input())
+
+    print([i for i, (x, y) in enumerate(zip(Output, Answer)) if x != y])
+
+
+
+
+'''
+Executions
+'''
+# zigzag('dasdasssssdasfdgdfsghfghfghfghdasd',5)
+#lines_Counter()
+Answer_Checker()
