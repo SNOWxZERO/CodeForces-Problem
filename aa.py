@@ -52,5 +52,5 @@ def Answer_Checker():
 Executions
 '''
 # zigzag('dasdasssssdasfdgdfsghfghfghfghdasd',5)
-#lines_Counter()
+lines_Counter()
 Answer_Checker()
