@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AdvancedFWD/.idea/AdvancedFWD.iml" filepath="$PROJECT_DIR$/../AdvancedFWD/.idea/AdvancedFWD.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/CodeForces proplems.iml" filepath="$PROJECT_DIR$/.idea/CodeForces proplems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SelfScripts/.idea/SelfScripts.iml" filepath="$PROJECT_DIR$/../SelfScripts/.idea/SelfScripts.iml" />
     </modules>
   </component>
 </project>

@@ -33,6 +33,8 @@ def lines_Counter():
         if a == '..':
             break
         c += 1
+        if c == 54:
+            break
     print(c)
 def Answer_Checker():
     n = int(input())
@@ -46,11 +48,9 @@ def Answer_Checker():
     print([i for i, (x, y) in enumerate(zip(Output, Answer)) if x != y])
 
 
-
-
 '''
 Executions
 '''
 # zigzag('dasdasssssdasfdgdfsghfghfghfghdasd',5)
 lines_Counter()
-Answer_Checker()
+#Answer_Checker()
