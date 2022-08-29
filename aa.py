@@ -1,6 +1,8 @@
 '''
 Not CodeForces Problem
 '''
+import numpy
+
 
 def zigzag(s, x):
     i = 0
@@ -52,5 +54,6 @@ def Answer_Checker():
 Executions
 '''
 # zigzag('dasdasssssdasfdgdfsghfghfghfghdasd',5)
-lines_Counter()
+#lines_Counter()
 #Answer_Checker()
+numpy.average(5, 8, 15, 7, 10, 22, 3, 1, 15)
